@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_items">
+
+    <fragment
+        android:id="@+id/navigation_stores"
+        android:name="com.app.pricepal.ui.stores.StoresFragment"
+        android:label="@string/title_stores"
+        tools:layout="@layout/fragment_stores" />
+
+    <fragment
+        android:id="@+id/navigation_items"
+        android:name="com.app.pricepal.ui.items.ItemsFragment"
+        android:label="@string/title_products"
+        tools:layout="@layout/fragment_items" />
+
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="com.app.pricepal.ui.scan.BarcodeScannerFragment"
+        android:label="@string/title_scan"
+        tools:layout="@layout/fragment_barcode" />
+   
+    <fragment
+        android:id="@+id/navigation_compare"
+        android:name="com.app.pricepal.ui.compare.PriceCompareFragment"
+        android:label="@string/title_compare"
+        tools:layout="@layout/fragment_compare" />
+</navigation>

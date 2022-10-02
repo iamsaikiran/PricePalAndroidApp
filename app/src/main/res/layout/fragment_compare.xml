@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.compare.PriceCompareViewModel">
+    <AutoCompleteTextView
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="7dp"
+        android:hint="@string/search_products_and_compare_prices"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableRight="@drawable/ic_baseline_search_24"
+        android:background="@drawable/card_border"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Last history"
+        android:textAlignment="textStart"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:id="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/searchText"
+        app:layout_constraintLeft_toLeftOf="@+id/searchText"/>
+    <TextView
+        android:id="@+id/clearSearchHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Clear history"
+        android:textAlignment="textEnd"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@+id/searchText"
+        app:layout_constraintRight_toRightOf="@+id/searchText"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_10"
+        app:layout_constraintTop_toBottomOf="@+id/clearSearchHistory"/>
+
+    <ListView
+        android:id="@+id/listHist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

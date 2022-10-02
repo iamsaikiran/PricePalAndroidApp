@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1006627062414",
+    "firebase_url": "https://pricepal-default-rtdb.firebaseio.com",
+    "project_id": "pricepal",
+    "storage_bucket": "pricepal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006627062414:android:43a5b31c0d6cf7cb583fdf",
+        "android_client_info": {
+          "package_name": "com.app.pricepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006627062414-mvmo5tetqcgaaefic0rk5i0ndadcr8ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYSC8_VaYsNC5YBBKUW3vhr4XtwWkghNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006627062414-mvmo5tetqcgaaefic0rk5i0ndadcr8ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_stores"
+        android:icon="@drawable/storeicon"
+        android:title="@string/title_stores" />
+
+    <item
+        android:id="@+id/navigation_items"
+        android:icon="@drawable/producticon"
+        android:title="@string/title_products" />
+
+    <item
+        android:id="@+id/navigation_scan"
+        android:icon="@drawable/barcodescanimage"
+        android:title="@string/title_scan" />
+
+
+    <item
+        android:id="@+id/navigation_compare"
+        android:icon="@drawable/ic_baseline_compare_24"
+        android:title="@string/title_compare" />
+
+</menu>

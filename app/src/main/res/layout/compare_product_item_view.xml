@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    tools:targetApi="m"
+    android:padding="7dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imgStore"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="75dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/storeicon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp">
+        <TextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Store Name"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvStoreAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store Name"
+            android:paddingTop="7dp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/tvStoreNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigate to Store"
+            android:paddingTop="7dp"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:textStyle="normal" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="0.00"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        android:gravity="center"
+        android:textStyle="bold" />
+</LinearLayout>

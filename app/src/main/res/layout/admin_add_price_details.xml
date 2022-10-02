@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.Signup">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tintMode="src_over"
+                android:tint="#000000"
+                android:rotation="180"
+                android:scaleType="centerCrop"
+                tools:ignore="UseAppTint"
+                tools:targetApi="lollipop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:src="@mipmap/ic_launcher_foreground"
+                    android:tint="#48b2b2b2"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/app_name_admin"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvReload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Add price"
+                    android:textAlignment="textStart"
+                    android:drawableRight="@drawable/ic_baseline_refresh_24"
+                    android:clickable="true"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Sign up to proceed"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_border"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:backgroundTint="@color/black"
+                            android:src="@drawable/ic_baseline_date_range_24"
+                            app:tint="@color/teal_700" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/tvDateFilter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01/01/2022"
+                                android:textAlignment="textStart"
+                                android:padding="10dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_border"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:backgroundTint="@color/black"
+                            android:src="@drawable/ic_outline_perm_identity_24"
+                            app:tint="@color/teal_700" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Item"
+                                android:textStyle="bold" />
+                            <Spinner
+                                android:id="@+id/sp_item"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="auto"
+                                android:paddingTop="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingBottom="7dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_border"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:backgroundTint="@color/black"
+                            android:src="@drawable/ic_outline_perm_identity_24"
+                            app:tint="@color/teal_700" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Store"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/sp_store"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="auto"
+                                android:paddingTop="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingBottom="7dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/card_border"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:backgroundTint="@color/black"
+                            android:src="@drawable/ic_outline_perm_identity_24"
+                            app:tint="@color/teal_700" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:hint="0.001"
+                                android:focusable="auto"
+                                android:inputType="numberDecimal"
+                                android:paddingTop="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingBottom="7dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:padding="7dp"
+                        android:background="@drawable/primary_button_border"
+                        android:text="Add"
+                        android:textAllCaps="true" />
+                    <Button
+                        android:id="@+id/admin_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:padding="7dp"
+                        android:background="@drawable/primary_button_border"
+                        android:text="Close"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
